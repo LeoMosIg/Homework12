@@ -1,0 +1,680 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 22:38:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 22:38:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 22:38:21] "GET /search?s=утро HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 22:38:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 22:38:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Выполняеться поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\views.py", line 24, in search_page
+    return render_template("post_list.html", posts=filtered_posts, s=s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\templates\post_list.html", line 17, in top-level template code
+    <img src="{{ post.pic }}"
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'post' is undefined
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 22:39:52] "[35m[1mGET /search?s=утро HTTP/1.1[0m" 500 -
+INFO:root:Выполняеться поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\views.py", line 24, in search_page
+    return render_template("post_list.html", posts=filtered_posts, s=s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\templates\post_list.html", line 17, in top-level template code
+    <img src="{{ post.pic }}"
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'post' is undefined
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 22:39:54] "[35m[1mGET /search?s=утро HTTP/1.1[0m" 500 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:08:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:08:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\views.py", line 24, in search_page
+    return render_template('post_list.html', posts=filtered_posts, s=s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\templates\post_list.html", line 17, in top-level template code
+    <img src="{{ post.pic }}"
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'post' is undefined
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:08:30] "[35m[1mGET /search?s= HTTP/1.1[0m" 500 -
+INFO:root:Выполняеться поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\views.py", line 24, in search_page
+    return render_template('post_list.html', posts=filtered_posts, s=s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\templates\post_list.html", line 17, in top-level template code
+    <img src="{{ post.pic }}"
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'post' is undefined
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:08:34] "[35m[1mGET /search?s=утро HTTP/1.1[0m" 500 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:08:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:08:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:08:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:08:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\views.py", line 24, in search_page
+    return render_template('post_list.html', posts=filtered_posts, s=s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\templates\post_list.html", line 17, in top-level template code
+    <img src="{{ post.pic }}"
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'post' is undefined
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:08:49] "[35m[1mGET /search?s=утро HTTP/1.1[0m" 500 -
+INFO:root:Выполняеться поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\views.py", line 24, in search_page
+    return render_template("post_list.html", posts=filtered_posts, s=s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\templates\post_list.html", line 17, in top-level template code
+    <img src="{{ post.pic }}"
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'post' is undefined
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:09:26] "[35m[1mGET /search?s=утро HTTP/1.1[0m" 500 -
+INFO:root:Выполняеться поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\views.py", line 24, in search_page
+    return render_template("post_list.html", posts=filtered_posts, s=s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\templates\post_list.html", line 17, in top-level template code
+    <img src="{{ post.pic }}"
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'post' is undefined
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:09:28] "[35m[1mGET /search?s=утро HTTP/1.1[0m" 500 -
+INFO:root:Выполняеться поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\views.py", line 24, in search_page
+    return render_template("post_list.html", posts=filtered_posts, s=s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\templates\post_list.html", line 17, in top-level template code
+    <img src="{{ post.pic }}"
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'post' is undefined
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:09:59] "[35m[1mGET /search?s=утро HTTP/1.1[0m" 500 -
+INFO:root:Выполняеться поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\views.py", line 24, in search_page
+    return render_template("post_list.html", posts=filtered_posts, s=s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\templates\post_list.html", line 17, in top-level template code
+    <img src="{{ post.pic }}"
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'post' is undefined
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:10:02] "[35m[1mGET /search?s=утро HTTP/1.1[0m" 500 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:14:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:14:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\views.py", line 24, in search_page
+    return render_template("post_list.html", posts=filtered_posts, s=s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\templates\post_list.html", line 17, in top-level template code
+    <img src="{{ post.pic }}"
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'post' is undefined
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:14:56] "[35m[1mGET /search?s=утро HTTP/1.1[0m" 500 -
+INFO:root:Выполняеться поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\views.py", line 24, in search_page
+    return render_template("post_list.html", posts=filtered_posts, s=s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\templates\post_list.html", line 17, in top-level template code
+    <img src="{{ post.pic }}"
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'post' is undefined
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:14:57] "[35m[1mGET /search?s=утро HTTP/1.1[0m" 500 -
+INFO:root:Выполняеться поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\views.py", line 24, in search_page
+    return render_template("post_list.html", posts=filtered_posts, s=s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\templates\post_list.html", line 17, in top-level template code
+    <img src="{{ post.pic }}"
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'post' is undefined
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:14:58] "[35m[1mGET /search?s=утро HTTP/1.1[0m" 500 -
+INFO:root:Выполняеться поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\views.py", line 24, in search_page
+    return render_template("post_list.html", posts=filtered_posts, s=s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\templates\post_list.html", line 17, in top-level template code
+    <img src="{{ post.pic }}"
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'post' is undefined
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:15:01] "[35m[1mGET /search?s=утро HTTP/1.1[0m" 500 -
+INFO:root:Выполняеться поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\views.py", line 24, in search_page
+    return render_template("post_list.html", posts=filtered_posts, s=s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Leonid\PycharmProjects\Homework12\main\templates\post_list.html", line 17, in top-level template code
+    <img src="{{ post.pic }}"
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\jinja2\environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'post' is undefined
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:15:05] "[35m[1mGET /search?s= HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:20:45] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:20:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:20:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:20:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:20:49] "GET /search?s=утро HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:20:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:20:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:20:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:23:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:23:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:23:45] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:23:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:23:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:23:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:23:48] "GET /search?s=утро HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:23:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:33:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:33:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:33:36] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:33:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:33:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:33:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:33:39] "GET /search?s=утро HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:33:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:33:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:33:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:33:51] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:33:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:33:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:33:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:33:54] "GET /search?s=утро HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:33:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:33:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:33:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:34:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:34:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:34:45] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:34:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:34:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:34:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:34:48] "GET /search?s=утро HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:34:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:35:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:35:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:35:57] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:35:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:35:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:35:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:36:02] "GET /search?s=утро HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:36:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:37:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:37:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:37:28] "GET /search?s=утро HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:37:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:37:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:37:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:37:38] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:37:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:38:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:38:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:38:03] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:38:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:38:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:38:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:38:09] "GET /search?s=утро HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:38:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:38:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:38:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:38:15] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:38:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:38:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:38:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:38:38] "GET /search?s=фотка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:38:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:43:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:43:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:43:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:43:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:43:03] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:43:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:43:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:43:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:43:07] "GET /search?s=утро HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:43:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:43:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:43:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:43:19] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:43:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:43:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:43:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:43:24] "GET /search?s=фотка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:43:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:43:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:43:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
