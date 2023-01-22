@@ -1,6 +1,4 @@
-from os import abort
-
-from flask import Blueprint, request, render_template
+from flask import Blueprint, request, render_template, abort
 from functions import load_json_data, save_picture, add_post
 from config import POST_PATH
 from exceptions import WrongImgType

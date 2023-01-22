@@ -1008,3 +1008,432 @@ Traceback (most recent call last):
     abort(400)
 TypeError: nt.abort() takes no arguments (1 given)
 INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 23:11:13] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:41:29] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:41:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:41:29] "[36mGET /uploads/images/test1.bmp HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:41:29] "GET /uploads/images/RUWzLDENL34.jpg HTTP/1.1" 200 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:41:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:41:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:41:32] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:41:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:41:32] "[36mGET /uploads/images/test1.bmp HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:41:32] "[36mGET /uploads/images/RUWzLDENL34.jpg HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:41:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:41:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:41:34] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:41:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Данные не загружены, отсутствует часть данных
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:41:39] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:41:41] "GET /post HTTP/1.1" 200 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 32, in create_new_post_by_user
+    new_post = {"pic": save_picture(picture), "content": content}
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\functions.py", line 35, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {','.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только jpg,png,gif,jpeg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 34, in create_new_post_by_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:41:44] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 32, in create_new_post_by_user
+    new_post = {"pic": save_picture(picture), "content": content}
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\functions.py", line 35, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {','.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только jpg,png,gif,jpeg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 34, in create_new_post_by_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:41:48] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 32, in create_new_post_by_user
+    new_post = {"pic": save_picture(picture), "content": content}
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\functions.py", line 35, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {','.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только jpg,png,gif,jpeg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 34, in create_new_post_by_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:42:12] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 32, in create_new_post_by_user
+    new_post = {"pic": save_picture(picture), "content": content}
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\functions.py", line 35, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {','.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только jpg,png,gif,jpeg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 34, in create_new_post_by_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:42:14] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 32, in create_new_post_by_user
+    new_post = {"pic": save_picture(picture), "content": content}
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\functions.py", line 35, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {','.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только jpg,png,gif,jpeg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 34, in create_new_post_by_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:44:11] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 32, in create_new_post_by_user
+    new_post = {"pic": save_picture(picture), "content": content}
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\functions.py", line 35, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {','.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только jpg,png,gif,jpeg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 34, in create_new_post_by_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:44:14] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 32, in create_new_post_by_user
+    new_post = {"pic": save_picture(picture), "content": content}
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\functions.py", line 35, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {','.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только jpg,png,gif,jpeg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 34, in create_new_post_by_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:44:18] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:46:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:46:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:46:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:46:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:46:14] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:46:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:46:14] "[36mGET /uploads/images/test1.bmp HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:46:14] "[36mGET /uploads/images/RUWzLDENL34.jpg HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:46:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:46:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:46:16] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:46:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 32, in create_new_post_by_user
+    new_post = {"pic": save_picture(picture), "content": content}
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\functions.py", line 35, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {','.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только jpg,png,gif,jpeg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 34, in create_new_post_by_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:46:21] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 32, in create_new_post_by_user
+    new_post = {"pic": save_picture(picture), "content": content}
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\functions.py", line 35, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {','.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только jpg,png,gif,jpeg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 34, in create_new_post_by_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:47:28] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 32, in create_new_post_by_user
+    new_post = {"pic": save_picture(picture), "content": content}
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\functions.py", line 35, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {','.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только jpg,png,gif,jpeg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 34, in create_new_post_by_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:47:31] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 32, in create_new_post_by_user
+    new_post = {"pic": save_picture(picture), "content": content}
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\functions.py", line 35, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {','.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только jpg,png,gif,jpeg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 34, in create_new_post_by_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:47:34] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 32, in create_new_post_by_user
+    new_post = {"pic": save_picture(picture), "content": content}
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\functions.py", line 35, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {','.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только jpg,png,gif,jpeg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 34, in create_new_post_by_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:48:08] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 32, in create_new_post_by_user
+    new_post = {"pic": save_picture(picture), "content": content}
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\functions.py", line 35, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {','.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только jpg,png,gif,jpeg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 34, in create_new_post_by_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:48:11] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:49:26] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2023 00:50:04] "POST /post HTTP/1.1" 200 -
