@@ -1,29 +1,21 @@
-from flask import Flask, request, render_template, send_from_directory
+from flask import Flask, render_template, send_from_directory
 from main.views import main_blueprints
+from loader.views import loader_blueprints
+import logging
 
 app = Flask(__name__)
 
-"""
-@app.route("/")
-def page_index():
-    pass
-
-
-@app.route("/list")
-def page_tag():
-    pass
-
-
-@app.route("/post", methods=["GET", "POST"])
-def page_post_form():
-    pass
-
-
-@app.route("/post", methods=["POST"])
-def page_post_upload():
-    pass
-"""
+"""Регистрация blueprint"""
 app.register_blueprint(main_blueprints)
+app.register_blueprint(loader_blueprints)
+
+"""Вьюшка ошибки при загрузке не того формата файла и специальная вьюшка для uploads"""
+
+
+@app.errorhandler(400)
+def bad_request_error(error):
+    logging.info(error)
+    return render_template("error_400.html", error=error)
 
 
 @app.route("/uploads/<path:path>")

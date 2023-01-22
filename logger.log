@@ -678,3 +678,333 @@ INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:43:24] "[36mGET /static/style.css H
 INFO:root:Открытие главной страницы
 INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:43:28] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:43:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:51:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:51:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:51:37] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:51:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:51:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:51:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:51:56] "GET /search?s=фотка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:51:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:52:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:52:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:52:21] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:52:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:52:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jan/2023 23:52:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:31:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:31:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:31:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:31:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:31:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:32:02] "GET /search?s=утро HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:32:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:32:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:32:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:32:08] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:32:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:32:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:32:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:32:13] "GET /search?s=фотка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:32:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:32:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:32:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:32:16] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:32:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:52:21] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:52:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:52:22] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:52:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:52:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:52:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:52:27] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 10:52:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:11:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:11:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:11:08] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:11:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:12:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:12:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:12:24] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:12:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:14:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:14:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:14:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:14:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:14:15] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:14:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:14:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:14:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:14:19] "GET /search?s=утро HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:14:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:14:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:14:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:14:27] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:14:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:18:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:18:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:18:16] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:18:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:38:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:38:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:40:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:40:04] "GET /static/style.css HTTP/1.1" 200 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:40:06] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:40:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:40:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:40:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:40:10] "GET /search?s=утро HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 11:40:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 13:04:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 13:04:38] "GET /static/style.css HTTP/1.1" 200 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 13:04:40] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 13:04:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:06:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:06:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:06:55] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:06:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:06:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:06:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:10:11] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:10:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:10:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:10:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:11:00] "GET /search?s=утро HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:11:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:11:02] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:11:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:11:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:11:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:11:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:20:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:20:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:20:58] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:20:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Данные не загружены, отсутствует часть данных
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:21:01] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:21:03] "GET /post HTTP/1.1" 200 -
+INFO:root:Данные не загружены, отсутствует часть данных
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:21:04] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:21:05] "GET /post HTTP/1.1" 200 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2134, in make_response
+    raise TypeError(
+TypeError: The view function for 'loader_blueprints.create_new_post_by_user' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:21:12] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:root:Данные не загружены, отсутствует часть данных
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 14:21:16] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Данные не загружены, отсутствует часть данных
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 15:20:53] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 15:20:54] "GET /post HTTP/1.1" 200 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 15:20:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 15:20:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 15:20:58] "GET /search?s=утро HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 15:20:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 15:21:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 15:21:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 15:21:03] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 15:21:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 15:21:29] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 15:21:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 15:21:29] "GET /uploads/images/test1.bmp HTTP/1.1" 200 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 15:22:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 15:22:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 15:22:10] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 15:22:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 15:22:14] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 15:22:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 15:22:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 15:22:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 20:08:15] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 20:08:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 20:08:15] "[36mGET /uploads/images/test1.bmp HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 20:08:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 20:08:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 20:08:21] "GET /search?s=утро HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 20:08:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 20:08:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 20:08:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 20:08:23] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 20:08:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 28, in create_new_post_by_user
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\utils.py", line 11, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {','.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только jpg,png,gif,jpeg
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 20:08:37] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 20:09:06] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 20:09:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 20:09:06] "GET /uploads/images/RUWzLDENL34.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 20:09:14] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 20:09:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 20:09:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 20:09:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 20:09:27] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 20:09:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 20:09:27] "[36mGET /uploads/images/test1.bmp HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 20:09:27] "[36mGET /uploads/images/RUWzLDENL34.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 23:10:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 23:10:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 23:10:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 23:10:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняеться поиск
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 23:10:23] "GET /search?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 23:10:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 23:10:23] "[36mGET /uploads/images/test1.bmp HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 23:10:23] "[36mGET /uploads/images/RUWzLDENL34.jpg HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 23:10:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 23:10:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 23:10:33] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 23:10:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 23:10:47] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 23:10:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 23:10:47] "GET /uploads/images/RUWzLDENL34.jpg HTTP/1.1" 200 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 23:11:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 23:11:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 23:11:02] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 23:11:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 29, in create_new_post_by_user
+    new_post = {"pic": save_picture(picture), "content": content}
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\utils.py", line 11, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {','.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только jpg,png,gif,jpeg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\venv\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leonid\PycharmProjects\Homework12\loader\views.py", line 31, in create_new_post_by_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2023 23:11:13] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
